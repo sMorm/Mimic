@@ -1,7 +1,7 @@
 # Mimic
 JavaScript Stream Bot for Twitter
 
-These programs uses ttezel's Twitter API Client for node called 'twit' and node.
+These programs uses ttezel's Twitter API Client for node called 'twit'.
 
   Head over to his repository: https://github.com/ttezel/twit
   
