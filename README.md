@@ -18,10 +18,9 @@ replyBot.js
 Functions:
     The tweetEvent() function, given the eventMsg parameter, is a callback function that is invoked when there is a new tweet 
     found on the stream. tweetEvent() then analyzes the tweet by checking whether if the tweet was posted by the person we are  
-    looking for. And if it is, it will increment count, which keeps track of the number of iterations, but also allows us to 
+    looking for.And if it is, it will increment count, which keeps track of the number of iterations, but also allows us to 
     give our Tweet a unique string to avoid collision. It's necessary to avoid collisions because Twitter will only allow  
-    unique tweets to be posted within a 24-hour time-frame.
-    Finally, if tweetEvent() found that it was in fact the person that we are looking for, it will then invoke tweetIt() which
+    unique tweets to be posted within a 24-hour time-frame.Finally, if tweetEvent() found that it was in fact the person that we are looking for, it will then invoke tweetIt() which
     takes parameters 'txt'(the message we want to tweet to the user tweeting) and 'eventMsg'. The latter is necessary because
     we want to be able to reply back to the tweet instead of simply tweeting the person(which won't show under the tweet).
     
