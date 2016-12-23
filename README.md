@@ -26,7 +26,8 @@ Functions:
     we want to be able to reply back to the tweet instead of simply tweeting the person(which won't show under the tweet).
     
 How to run the program:
-1) Make sure that you've correctly configured your Twitter Keys and node, which can be done by following Daniel Shiffman's
+
+1) Make sure that you've correctly configured your Twitter Keys and node, which can be done by following Daniel Shiffman's 
 first three videos in the playlist.
 
 2) Modify the program by changing 'var userToMatch' to @some_username
@@ -51,6 +52,7 @@ Functions:
     able to post a reply directly to the tweet.
     
  How to run the program:
+ 
   1) Make sure that you've correctly configured your Twitter Keys and node, which can be done by following Daniel Shiffman's
   first three videos in the playlist.
   
