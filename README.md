@@ -26,10 +26,14 @@ replyBot.js
 How to run the program:
 1) Make sure that you've correctly configured your Twitter Keys and node, which can be done by following Daniel Shiffman's
 first three videos in the playlist.
+
 2) Modify the program by changing 'var userToMatch' to @some_username
+
 3) Customize the tweet to send to the user by modifying 'var stringToTweet'
+
 4) Finally, be sure to remember that Twitter's limit is still 140 characters, to avoid errors, make sure your string is less
 than 140 characters by taking the length of your 'stringToTweet' and subtract it by the length of 'userToMatch'
+
 5) Once everything is all set up, go to your working directly and enter the command :
                                                                                       node replyBot.js
                                                                                       
@@ -37,7 +41,7 @@ mimicBot.js
   Functionality: A bot that allows a user to instantly reply back to a tweet that they were mentioned in, with the same
   message
   
-  Functions:
+Functions:
     tweetMention() is a callback function that takes eventMsg when a tweet is populated onto a timeline. The function uses
     regular expressions, or regex, to parse through the tweet that the user is mentioned in. If the user is found, the
     the function removes the user's @user_name from the tweet, and invokes tweetIt(). The function tweetIt() is invoked with 
@@ -47,8 +51,10 @@ mimicBot.js
  How to run the program:
   1) Make sure that you've correctly configured your Twitter Keys and node, which can be done by following Daniel Shiffman's
   first three videos in the playlist.
+  
   2) Modify line 15: inserting YOUR Twitter handle, i.e. @Jack. "/@ /g" lets javascript know that you're parsing a regular
   expression. So replace 'INSERT_YOUR_@NAME' on line 15 and 16 with your Twitter handle
+  
   3) For this program, we don't have to modify the text we're going to tweet out because if the user sending it to us did not
   exceed the 140 character limit, we won't either. So after completing steps 1 and 2, just run :
                                                                                                   node mimicBot.js
