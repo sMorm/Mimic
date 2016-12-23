@@ -4,7 +4,9 @@ JavaScript Stream Bot for Twitter
 These programs uses ttezel's Twitter API Client for node called 'twit' and node.
 
   Head over to his repository: https://github.com/ttezel/twit
+  
   node JavaScript runtime environment: https://nodejs.org/en/
+  
   How to setup node alongside the Twit client: https://www.youtube.com/playlist?list=PLRqwX-V7Uu6atTSxoRiVnSuOn6JHnq2yV
     (Thanks to Daniel Shiffman and ttezel)
   
@@ -13,7 +15,7 @@ replyBot.js
   
   Functionality: A bot that allows a user to tweet a custom message to a given @TwitterHandle, with a custom message.
   
-  Functions:
+Functions:
     The tweetEvent() function, given the eventMsg parameter, is a callback function that is invoked when there is a new tweet 
     found on the stream. tweetEvent() then analyzes the tweet by checking whether if the tweet was posted by the person we are  
     looking for. And if it is, it will increment count, which keeps track of the number of iterations, but also allows us to 
