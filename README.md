@@ -30,7 +30,7 @@ How to run the program:
 1) Make sure that you've correctly configured your Twitter Keys and node, which can be done by following Daniel Shiffman's 
 first three videos in the playlist.
 
-2) Modify the program by changing 'var userToMatch' to @some_username
+2) Modify the program by changing 'var userToMatch' to @some_username WITHOUT THE @ JUST THE USERNAME
 
 3) Customize the tweet to send to the user by modifying 'var stringToTweet'
 
