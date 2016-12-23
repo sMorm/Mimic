@@ -19,19 +19,18 @@ replyBot.js
     looking for. And if it is, it will increment count, which keeps track of the number of iterations, but also allows us to 
     give our Tweet a unique string to avoid collision. It's necessary to avoid collisions because Twitter will only allow  
     unique tweets to be posted within a 24-hour time-frame.
-    
     Finally, if tweetEvent() found that it was in fact the person that we are looking for, it will then invoke tweetIt() which
     takes parameters 'txt'(the message we want to tweet to the user tweeting) and 'eventMsg'. The latter is necessary because
     we want to be able to reply back to the tweet instead of simply tweeting the person(which won't show under the tweet).
     
 How to run the program:
-  1) Make sure that you've correctly configured your Twitter Keys and node, which can be done by following Daniel Shiffman's
-  first three videos in the playlist.
-  2) Modify the program by changing 'var userToMatch' to @some_username
-  3) Customize the tweet to send to the user by modifying 'var stringToTweet'
-  4) Finally, be sure to remember that Twitter's limit is still 140 characters, to avoid errors, make sure your string is less
-  than 140 characters by taking the length of your 'stringToTweet' and subtract it by the length of 'userToMatch'
-  5) Once everything is all set up, go to your working directly and enter the command :
+1) Make sure that you've correctly configured your Twitter Keys and node, which can be done by following Daniel Shiffman's
+first three videos in the playlist.
+2) Modify the program by changing 'var userToMatch' to @some_username
+3) Customize the tweet to send to the user by modifying 'var stringToTweet'
+4) Finally, be sure to remember that Twitter's limit is still 140 characters, to avoid errors, make sure your string is less
+than 140 characters by taking the length of your 'stringToTweet' and subtract it by the length of 'userToMatch'
+5) Once everything is all set up, go to your working directly and enter the command :
                                                                                       node replyBot.js
                                                                                       
 mimicBot.js
